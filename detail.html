@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet/less" href="less/style.less"/>
+		<link rel="stylesheet/less" href="less/detail.less"/>
+		<link rel="stylesheet" type="text/css" href="less/base.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/less.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/jquery.livequery.js"></script>
+		<!--图片放大插件-->
+		<script src="js/jquery.jqzoom.js"></script>
+		<!--图片放大插件用户自定义配置-->
+		<script src="js/use_jqzoom.js"></script>
+		<!--点击看大图-->
+		<script src="js/jquery.thickbox.js"></script>
+	</head>
+	<body>
+		<!--+++++++++++++++++++++++++++++++++++header开始-->
+		<header>
+			<nav class="clearfix">
+				<h1><a href="index.html"><img src="img/logo.png"/></a></h1>
+				<ul class="clearfix">
+					<li><a href="index.html">首页</a></li>
+					<li class="on"><a href="jianshe.html">衬衫</a></li>
+					<li><a href="jianshe.html">卫衣</a></li>
+					<li><a href="jianshe.html">裤子</a></li>
+					<li><a href="jianshe.html">联系我们</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--+++++++++++++++++++++++++++++++++++header结束-->
+		
+		<!--++++++++++++++++++++++++++++++++++++详情开始-->
+		<section class="detail">
+			<div class="pro_detail clearfix">
+				<!--左边-->
+				<div class="pro_detail_left">
+					<div class="jqzoom">
+		            <img src="img/blue_one_small.jpg" alt="" name="bigImg" class="fs" id="bigImg" jqimg="img/blue_one_big.jpg">
+		            
+					</div>
+					<ul class="imgList">
+						<li><img src="img/blue_one.jpg" alt=""></li>
+						<li><img src="img/white_one.jpg" alt=""></li>
+						<li><img src="img/black_one.jpg" alt=""></li>
+					</ul>
+				</div>
+				<!--右边-->
+				<div class="right">
+					<div class="text">
+						<h3>免烫高支棉条纹衬衣</h3>
+						<p>全新精品高支棉衬衫再次提升品质，精选100%新疆长绒棉织造而成，平整度好，短绒少； 80-100高支双股经纬交织，带来无与伦比的舒适享受；而且面料反光效......</p>
+					</div>
+					<p><strong>现价：</strong><span>200</span><i>原价:300</i></p>
+					<p><strong>编号：</strong>33313993</p>
+					<div class="color_change">
+						<p><strong>颜色：</strong><span>深蓝</span></p>
+						<ul class="clearfix">
+							<li><img src="img/blue.jpg" alt="深蓝" /></li>
+							<li><img src="img/white.jpg" alt="白色" /></li>
+							<li><img src="img/black.jpg" alt="黑色" /></li>
+						</ul>
+					</div>
+					<div class="big_change">
+						<p><strong>尺寸：</strong><span>S</span></p>
+						<ul class="clearfix">
+							<li><button value="S">S</button></li>
+							<li><button value="M">M</button></li>
+							<li><button value="L">L</button></li>
+							<li><button value="XL">XL</button></li>
+						</ul>
+					</div>
+					<div class="pro_num">
+						数量：
+						<select id="num_sort" style="width:40px;">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+					<p class="pro_price"><strong>总计：</strong><span>200</span>元</p>
+					<div class="pro_rating clearfix">
+						<p><strong>给商品评分：</strong></p>
+						<div>																																																																												
+							<ul class="rating nostar">
+								<li class="one">
+									<a href="#" title="1分">1</a>
+								</li>
+								<li class="two">
+									<a href="#" title="2分">2</a>
+								</li>
+								<li class="three">
+									<a href="#" title="3分">3</a>
+								</li>
+								<li class="four">
+									<a href="#" title="4分">4</a>
+								</li>
+								<li class="five">
+									<a href="#" title="5分">5</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#">加入购物车</a>
+				</div>
+			</div>
+			
+			<!--详情介绍-->
+			<div id="tab">
+				<ul class="clearfix">
+					<li class="def">产品属性</li>
+					<li>产品尺码表</li>
+					<li>产品介绍</li>
+				</ul>
+				<div id="content">
+					<p class="show">沿用风靡百年的经典全棉牛津纺面料，通过领先的液氨整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，特推出免烫、易打理的精细免烫牛津纺长袖衬衫系列。 </p>
+					<p>来自新疆无污染的生态棉花，采用紧密纺精梳棉纱，单经双纬的织造组织，造就了颗粒饱满、朴实无华、温润细腻的经典牛津纺，易洗快干、手感丰软、吸湿性好。设计师遵循布料完美肌理，立体剪裁，以直筒明门襟的经典造型、配合圆袋、曲摆的现代人性化裁减，相得益彰，浑然天成。色彩明快的纯色衬衫简洁、自然、为您营造出利落、爽朗的形象，透出热情、优雅的个性；精选白、蓝、淡粉、宽条纹、英国格等10余种明亮、经典花型，色彩缤纷呈现，以适合本季着装，更显自然、舒适境界。</p>
+					<p>世界权威德国科德宝的衬和英国高士缝纫线使成衣领型自然舒展、永不变形，缝线部位平服工整、牢固耐磨；人性化的4片式后背打褶结构设计提供更舒适的活动空间；领尖扣的领型设计戴或不戴领带风格炯同、瞬间呈现；醇正天然设计，只为彰显自然荣耀。</p>
+					
+				</div>
+			</div>
+		</section>
+		
+		
+		<!--+++++++++++++++++++++++++++++++++++++您可能喜欢-->
+		<section class="cowboy">
+			<h2>您可能喜欢</h2>
+			<ul class="clearfix">
+				<li><a href="#"><img src="img/img_43.png"/><span><small>RMB:</small>299</span></a></li>
+				<li><a href="#"><img src="img/img_46.png"/><span><small>RMB:</small>299</span></a></li>
+				<li><a href="#"><img src="img/img_49.png"/><span><small>RMB:</small>299</span></a></li>
+				<li><a href="#"><img src="img/img_52.png"/><span><small>RMB:</small>299</span></a></li>
+				<li><a href="#"><img src="img/img_55.png"/><span><small>RMB:</small>299</span></a></li>
+			</ul>
+		</section>
+		
+		<footer>
+			<div>
+				<h4><a href="#">Jane Shopping，更多优惠产品，最后机会，不容错过！</a></h4>
+				<ul class="clearfix">
+					<li>
+						<h5><a href="#">购物指南</a></h5>
+						<a href="#">网上购买</a>
+						<a href="#">订单追踪</a>
+						<a href="#">如何成为vip</a>
+					</li>
+					<li>
+						<h5><a href="#">搜索</a></h5>
+						<a href="#">免烫高织棉衬衣</a>
+						<a href="#">免烫斜纹衬衣</a>
+						<a href="#">棉小方格正装衬衣</a>
+					</li>
+					<li>
+						<h5><a href="#">关于我们</a></h5>
+						<a href="#">关于Jane Shopping</a>
+						<a href="#">门店地址</a>
+					</li>
+					<li>
+						<h5><a href="#">联系我们</a></h5>
+						<a href="#">在线客服</a>
+						<a href="#">向我们发送email</a>
+					</li>
+					<li>
+						<h5><a href="#">输入您的电子邮箱</a></h5>
+						<a href="#">获取jane  shopping最新消息</a>
+						<input type="text" placeholder="请输入邮箱地址" />
+					</li>
+				</ul>
+				<p>
+					月齐商业（上海）有限公司 沪ICP备14016998号-1
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,381 @@
+@charset "utf-8";
+@bg_0:#000;
+@text_fff:#fff;
+@transform:rotate(-90deg);
+@wh:1200px;
+.after{
+    &:after{
+       content: "";
+       display: block;
+       width: 10px;
+       height: 6px;
+       position: absolute;
+       top: 8px;
+       right: 0;
+       z-index: 123;
+       background: url(../img/down.png) no-repeat center;
+       transition: .5s;
+   }
+}
+.on a{
+    background: @bg_0;
+    color: @text_fff;
+}
+
+//分类开始
+.classify{
+   width: @wh;
+   margin: 0 auto;
+   height: 500px;
+   aside{
+       width: 210px;
+       float: left;
+       margin:24px 40px 0 0;
+       text-align: left;
+       h3{
+           width: 100%;
+           height: 50px;
+           line-height: 50px;
+           font-size: 20px;
+           color: @bg_0;
+           cursor: pointer;
+           position:relative;
+           &:after{
+               content: "";
+               display: block;
+               width: 10px;
+               height: 6px;
+               position: absolute;
+               top: 22px;
+               right: 0;
+               z-index: 123;
+               background: url(../img/down.png) no-repeat center;
+               transition: .5s;
+           }
+       }
+       .active:after{
+           transform: @transform;
+       }
+       div:first-of-type{
+            ul{
+               width: 170px;
+               margin-left: 40px;
+                li{
+                   width: 100%;
+                   line-height: 24px;
+                   a{
+                       display: inline-block;
+                       width: 100%;
+                       color: #333;
+                       position: relative;
+                   }
+               }
+           }
+           .ul_1>li>a{
+               font-size: 16px;
+               .after
+           }
+           >ul>li>ul{
+               width: 120px;
+               li a{
+                   font-size: 14px;
+               }
+           }
+       }
+       div:last-of-type{
+           div{
+               height: 104px;
+               overflow: hidden;
+               li{
+               height: 26px; 
+               a{
+                   font-size: 14px;
+                 background: none;
+               }
+           }
+           }  
+          
+       }
+   }
+   .ad{
+       width: 950px;
+       height: 500px;
+       float: left;
+       overflow: hidden;
+       position: relative;
+       ul:first-of-type{
+          position: absolute; 
+          width: 2850px;
+          li{
+              display: inline-block;
+              width: 950px;
+              float: left;
+              position: relative;
+              a{
+                  display: block;
+                  position: absolute;
+                  font-size: 18px;
+                  color: @bg_0;
+                  right: 72px;
+                  bottom: 130px;
+                  width: 153px;
+                  height: 45px;
+                  background: #b3bcb5;
+                  text-align: center;
+                  line-height:45px ;
+                  transition: .5s;
+                  &:hover{
+                     color: #fff; 
+                  }
+              }
+              img{
+                  display: block;
+              }
+          }
+       }
+       ul:last-of-type{
+           position: absolute;
+           right: 30px;
+           bottom: 25px;
+           li{
+               width: 10px;
+               height: 10px;
+               border-radius:50%;
+               text-indent: -9999em;
+               border: 2px solid #fff;
+               cursor: pointer;
+               margin: 0 4px;
+               float: left;
+               &.on{
+                   background: #fff;
+               }
+           }
+       }
+   }
+}
+
+
+//分类结束
+
+//新品展示开始
+section{
+    width: @wh;
+    margin: 0 auto;
+    text-align: center;
+    h2{
+        font-size: 36px;
+        color: @bg_0;
+        line-height: 132px;
+        font-weight: normal;
+    }
+}
+.slick{
+    width: @wh;
+    margin: 0 auto;
+    .con{
+        position: relative;
+        a{
+            display: block;
+            width: 230px;
+            height: 310px;
+            padding-top: 156px;
+            text-align: center;
+            line-height: 26px;
+            background:url(../img/search.png) no-repeat center 110px ,rgba(0,0,0,0.5);
+            font-size: 16px;
+            color: #fff;
+            position: absolute;top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.5s;
+            &:hover{
+                opacity: 1;
+            }
+            span{
+                display: block;
+                font-size: 12px;
+                strong{
+                    font-size: 18px;
+                }
+            }
+        }
+        
+    }
+}
+.slick-slider {
+    position: relative;
+    height: 310px;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0 67px 0 95px;
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-prev,.slick-next {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 65px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    color: transparent;
+    top: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    z-index: 999999999;
+    &:focus{
+        outline: none;
+    }
+    &:before{
+          opacity: 0.25;
+    }
+}
+.slick-prev {
+    left: 0px;
+    background: url(../img/prev.png) no-repeat center, rgba(255, 255, 255, 0.8);
+}
+
+.slick-next {
+    right: 0px;
+    background: url(../img/next.png) no-repeat center, rgba(255, 255, 255, 0.8);
+}
+//新品展示结束
+//牛仔裤开始
+.cowboy{
+    div{
+        width: 100%;
+        height: 568px;
+        margin-bottom:50px ;
+        position: relative;
+        img{
+            display: block;
+            width: 100%;
+        }
+        a{
+            display: block;
+            position: absolute;
+            bottom: 172px;
+            left: 268px;
+            width: 220px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #fff;
+            padding-right: 10px;
+            background: url(../img/t_03.png) no-repeat 160px center,#1b191a;
+            
+           }
+    }
+    div:last-of-type{
+        display: block;
+        width: 100%;
+        height: 420px;
+        span{
+            display: inline-block;
+            width: 588px;
+            height: 420px;
+            float: left;
+            position:relative; 
+           
+            i{
+                font-style: normal;
+                color: #fff;
+                position: absolute;
+                bottom: 50px;
+                left: 243px;
+                z-index: 1232;
+                opacity: 0;
+                font-size: 24px;
+                 transition: 1s;
+                small{
+                    font-size: 14px;
+                }
+            }
+            &:before{
+                content: "";
+                display: block;
+                width: 588px;
+                height: 420px;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,0.5);
+                 transition: 1s;opacity: 0;
+            }
+            &:hover:before{opacity: 1;
+            }
+            
+            &:hover i{
+                opacity: 1;
+            }
+        }
+        span:first-of-type{
+            margin-right: 2%;
+        }
+    }
+    ul{
+        width: 100%;
+        margin: 50px 0 138px 0px;
+        li{
+            width:210px;
+            float: left;
+            padding: 0 15px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            span{
+                display: block;
+                color: @bg_0;
+                line-height: 32px;
+                font-size: 18px;
+                font-weight: bold;
+                small{
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        
+    }
+}
+//牛仔裤结束
+
+
+
+
+
+
+
+
+
+
+
